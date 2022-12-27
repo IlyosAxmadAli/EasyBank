@@ -1,0 +1,80 @@
+.hero {
+  background: url("../images/hero-img.png"), $hero-articles-bg;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 17rem 0;
+  &__text-wrapper {
+    width: 100%;
+    max-width: 447px;
+    h1 {
+      @include font(5.6rem, 1.14, 100, $text-color2);
+      margin-bottom: 36px;
+    }
+  }
+  p {
+    @include font(1.8rem, 2.8rem);
+    margin-bottom: 3.6rem;
+  }
+}
+
+.services {
+  background: $services-bg;
+  padding-top: 9.6rem;
+  padding-bottom: 9.4rem;
+  &__title {
+    @include font(4rem, 6.4rem, 100, $text-color2);
+    margin-bottom: 16px;
+  }
+  &__desc {
+    @include font(1.8rem, 2.8rem);
+    margin-bottom: 72px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    column-gap: 30px;
+    row-gap: 32px;
+  }
+  &__item {
+    img {
+      margin-bottom: 4rem;
+    }
+    h3 {
+      @include font(2.4rem, 2.8rem, 100, $text-color2);
+      margin-bottom: 26px;
+    }
+  }
+}
+.articles {
+  background: $hero-articles-bg;
+  padding-top: 80px;
+  padding-bottom: 124px;
+
+  &__wrapper {
+    background-color: $white-color;
+    padding: 2.4rem;
+  }
+  &__title {
+    @include font(4rem, 6.4rem, 100, $text-color2);
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    column-gap: 30px;
+  }
+  h3 {
+    @include font(1rem, 1.8rem, 100, $text-color1);
+    margin-bottom: 8px;
+  }
+  h2 {
+    @include font(1.6rem, 2rem, 100, $text-color2);
+    margin-bottom: 8px;
+  }
+  h2:hover {
+    color: $hover-color;
+  }
+  p {
+    @include font(1.3rem, 1.8rem, 100, $text-color1);
+  }
+}

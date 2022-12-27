@@ -1,0 +1,24 @@
+.header__btn {
+  font: {
+    weight: 500;
+    size: 1.4rem;
+  }
+}
+.btn {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    #16a085 0%,
+    #f4d03f 51%,
+    #16a085 100%
+  );
+  background-size: 200% auto;
+  @include font(1.4rem, 2.8rem, 500, $white-color);
+  transition: 0.5s;
+  border-radius: 22px;
+  padding: 0.8rem 3.6rem;
+}
+
+.btn:hover {
+  background-position: right center;
+}

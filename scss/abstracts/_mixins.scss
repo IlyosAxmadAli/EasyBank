@@ -1,0 +1,15 @@
+@mixin font(
+  $size,
+  $lineHeight,
+  $weight: 400,
+  $color: #9795a5,
+  $family: "Public Sans"
+) {
+  font: {
+    size: $size;
+    weight: $weight;
+    family: $family;
+  }
+  line-height: $lineHeight;
+  color: $color;
+}

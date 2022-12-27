@@ -1,0 +1,53 @@
+.footer {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background: $footer-bg;
+  &__container {
+    display: flex;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 131px;
+    a path:hover {
+      fill: $hover-color;
+    }
+    .site-logo {
+      margin-bottom: 55px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+    }
+  }
+  &__sitenav {
+    margin-right: auto;
+    &__link {
+      display: inline-block;
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem;
+      padding: 0.8rem;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 160px);
+      column-gap: 3rem;
+    }
+    li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    a {
+      @include font(1.5rem, 2.6rem, 400, #fff);
+    }
+    a:hover {
+      color: $hover-color;
+    }
+  }
+  &__div {
+    text-align: right;
+  }
+  &__btn {
+    margin-bottom: 24px;
+  }
+}
