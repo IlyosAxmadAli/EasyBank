@@ -13,3 +13,14 @@
   line-height: $lineHeight;
   color: $color;
 }
+@mixin responsive($witdh) {
+  @if $witdh == tablet {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  } @else if $witdh == mibile {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+}

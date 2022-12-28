@@ -23,12 +23,12 @@
   }
   &__sitenav {
     margin-right: auto;
-    &__link {
-      display: inline-block;
-      padding-top: 3.2rem;
-      padding-bottom: 3.2rem;
-      padding: 0.8rem;
-    }
+    // &__link {
+    //   display: inline-block;
+    //   padding-top: 3.2rem;
+    //   padding-bottom: 3.2rem;
+    //   padding: 0.8rem;
+    // }
     ul {
       display: grid;
       grid-template-columns: repeat(2, 160px);

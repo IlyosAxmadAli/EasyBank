@@ -47,6 +47,7 @@ a {
 }
 
 html {
+  scroll-behavior: smooth;
   height: 100vh;
   font-size: 62.5%;
 }
@@ -89,22 +90,35 @@ main {
 }
 .sitenav__link {
   padding-top: 3.2rem;
-  padding-bottom: 3.2rem;
-  display: inline-block;
+  padding-bottom: 2.8rem;
   font-size: 1.4rem;
   font-weight: 400;
   font-family: "Public Sans";
   line-height: 1.6;
   color: #9795a5;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
 }
 .sitenav__link:hover {
+  border-bottom: 4px solid #30c88f;
   color: #2d314d;
+}
+@media screen and (max-width: 800px) {
+  .sitenav {
+    display: none;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .header {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
 }
 
 .footer {
@@ -134,12 +148,6 @@ main {
 .footer__sitenav {
   margin-right: auto;
 }
-.footer__sitenav__link {
-  display: inline-block;
-  padding-top: 3.2rem;
-  padding-bottom: 3.2rem;
-  padding: 0.8rem;
-}
 .footer__sitenav ul {
   display: grid;
   grid-template-columns: repeat(2, 160px);
@@ -166,11 +174,6 @@ main {
   margin-bottom: 24px;
 }
 
-.header__btn {
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-
 .btn {
   display: inline-block;
   background-image: linear-gradient(to right, #16a085 0%, #f4d03f 51%, #16a085 100%);
@@ -187,6 +190,16 @@ main {
 
 .btn:hover {
   background-position: right center;
+}
+
+.header__btn {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 800px) {
+  .header__btn {
+    display: none;
+  }
 }
 
 .hero {

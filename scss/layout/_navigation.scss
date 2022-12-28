@@ -7,12 +7,16 @@
   }
   &__link {
     padding-top: 3.2rem;
-    padding-bottom: 3.2rem;
-    display: inline-block;
+    padding-bottom: 2.8rem;
     @include font(1.4rem, 1.6);
+    display: inline-block;
+    border-bottom: 4px solid transparent;
   }
   &__link:hover {
-    // border-bottom: 4px solid $hover-color;
+    border-bottom: 4px solid $hover-color;
     color: $text-color2;
+  }
+  @include responsive(tablet) {
+    display: none;
   }
 }

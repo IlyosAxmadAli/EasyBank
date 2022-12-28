@@ -4,4 +4,8 @@
     align-items: center;
     justify-content: space-between;
   }
+  @include responsive(tablet) {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
 }

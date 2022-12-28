@@ -1,9 +1,3 @@
-.header__btn {
-  font: {
-    weight: 500;
-    size: 1.4rem;
-  }
-}
 .btn {
   display: inline-block;
   background-image: linear-gradient(
@@ -21,4 +15,13 @@
 
 .btn:hover {
   background-position: right center;
+}
+.header__btn {
+  font: {
+    weight: 500;
+    size: 1.4rem;
+  }
+  @include responsive(tablet) {
+    display: none;
+  }
 }
