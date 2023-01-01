@@ -120,6 +120,17 @@ main {
     padding-bottom: 3.2rem;
   }
 }
+.header .toggle-btn {
+  background-color: transparent;
+  background-position: right;
+  border: none;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .header .toggle-btn {
+    display: block;
+  }
+}
 
 .footer {
   padding-top: 4.8rem;
@@ -129,10 +140,23 @@ main {
 .footer__container {
   display: flex;
 }
+@media screen and (max-width: 800px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .footer__wrapper {
   display: flex;
   flex-direction: column;
   margin-right: 131px;
+}
+@media screen and (max-width: 800px) {
+  .footer__wrapper {
+    margin: auto;
+  }
 }
 .footer__wrapper a path:hover {
   fill: #30c88f;
@@ -145,14 +169,33 @@ main {
   align-items: center;
   gap: 1.3rem;
 }
+@media screen and (max-width: 800px) {
+  .footer__wrapper ul {
+    margin-bottom: 30px;
+  }
+}
 .footer__sitenav {
   margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+  .footer__sitenav {
+    margin: auto;
+  }
 }
 .footer__sitenav ul {
   display: grid;
   grid-template-columns: repeat(2, 160px);
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .footer__sitenav ul {
+    grid-template-columns: repeat(1, 160px);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 .footer__sitenav li:not(:last-child) {
   margin-bottom: 8px;
@@ -169,6 +212,11 @@ main {
 }
 .footer__div {
   text-align: right;
+}
+@media screen and (max-width: 800px) {
+  .footer__div {
+    text-align: center;
+  }
 }
 .footer__btn {
   margin-bottom: 24px;
@@ -228,6 +276,19 @@ main {
   color: #9795a5;
   margin-bottom: 3.6rem;
 }
+@media screen and (max-width: 800px) {
+  .hero {
+    background: url("../images/phones-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 450px;
+    padding-bottom: 0;
+  }
+}
 
 .services {
   background: #f4f5f7;
@@ -257,7 +318,13 @@ main {
        column-gap: 30px;
   row-gap: 32px;
 }
+@media screen and (max-width: 800px) {
+  .services__list {
+    justify-content: center;
+  }
+}
 .services__item img {
+  display: inline-block;
   margin-bottom: 4rem;
 }
 .services__item h3 {
@@ -267,6 +334,15 @@ main {
   line-height: 2.8rem;
   color: #2d314d;
   margin-bottom: 26px;
+}
+@media screen and (max-width: 800px) {
+  .services {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+  }
 }
 
 .articles {
@@ -286,11 +362,23 @@ main {
   color: #2d314d;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 800px) {
+  .articles__title {
+    text-align: center;
+  }
+}
 .articles__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 255px);
   -moz-column-gap: 30px;
        column-gap: 30px;
+}
+@media screen and (max-width: 800px) {
+  .articles__list {
+    row-gap: 30px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .articles h3 {
   font-size: 1rem;

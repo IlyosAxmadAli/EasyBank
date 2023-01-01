@@ -8,4 +8,13 @@
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
   }
+  .toggle-btn {
+    background-color: transparent;
+    background-position: right;
+    border: none;
+    display: none;
+    @include responsive(tablet) {
+      display: block;
+    }
+  }
 }

@@ -4,11 +4,21 @@
   background: $footer-bg;
   &__container {
     display: flex;
+    @include responsive(tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
   }
   &__wrapper {
+    @include responsive(tablet) {
+      margin: auto;
+    }
     display: flex;
     flex-direction: column;
     margin-right: 131px;
+
     a path:hover {
       fill: $hover-color;
     }
@@ -19,20 +29,27 @@
       display: flex;
       align-items: center;
       gap: 1.3rem;
+      @include responsive(tablet) {
+        margin-bottom: 30px;
+      }
     }
   }
   &__sitenav {
+    @include responsive(tablet) {
+      margin: auto;
+    }
     margin-right: auto;
-    // &__link {
-    //   display: inline-block;
-    //   padding-top: 3.2rem;
-    //   padding-bottom: 3.2rem;
-    //   padding: 0.8rem;
-    // }
     ul {
       display: grid;
       grid-template-columns: repeat(2, 160px);
       column-gap: 3rem;
+      @include responsive(tablet) {
+        grid-template-columns: repeat(1, 160px);
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
     }
     li:not(:last-child) {
       margin-bottom: 8px;
@@ -46,6 +63,9 @@
   }
   &__div {
     text-align: right;
+    @include responsive(tablet) {
+      text-align: center;
+    }
   }
   &__btn {
     margin-bottom: 24px;

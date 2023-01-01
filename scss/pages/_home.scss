@@ -15,6 +15,17 @@
     @include font(1.8rem, 2.8rem);
     margin-bottom: 3.6rem;
   }
+  @include responsive(tablet) {
+    background: url("../images/phones-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 450px;
+    padding-bottom: 0;
+  }
 }
 
 .services {
@@ -34,15 +45,26 @@
     grid-template-columns: repeat(auto-fill, 255px);
     column-gap: 30px;
     row-gap: 32px;
+    @include responsive(tablet) {
+      justify-content: center;
+    }
   }
   &__item {
     img {
+      display: inline-block;
       margin-bottom: 4rem;
     }
     h3 {
       @include font(2.4rem, 2.8rem, 100, $text-color2);
       margin-bottom: 26px;
     }
+  }
+  @include responsive(tablet) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
   }
 }
 .articles {
@@ -57,11 +79,19 @@
   &__title {
     @include font(4rem, 6.4rem, 100, $text-color2);
     margin-bottom: 40px;
+    @include responsive(tablet) {
+      text-align: center;
+    }
   }
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 255px);
     column-gap: 30px;
+    @include responsive(tablet) {
+      row-gap: 30px;
+      text-align: center;
+      justify-content: center;
+    }
   }
   h3 {
     @include font(1rem, 1.8rem, 100, $text-color1);
