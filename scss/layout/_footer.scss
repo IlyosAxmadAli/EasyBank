@@ -23,6 +23,9 @@
       fill: $hover-color;
     }
     .site-logo {
+      @include responsive(tablet) {
+        margin-bottom: 30px;
+      }
       margin-bottom: 55px;
     }
     ul {

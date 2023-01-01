@@ -9,11 +9,17 @@
     h1 {
       @include font(5.6rem, 1.14, 100, $text-color2);
       margin-bottom: 36px;
+      @include responsive(tablet) {
+        @include font(4rem, 1.14, 100, $text-color2);
+      }
     }
   }
   p {
     @include font(1.8rem, 2.8rem);
     margin-bottom: 3.6rem;
+    @include responsive(tablet) {
+      @include font(1.5rem, 1.56);
+    }
   }
   @include responsive(tablet) {
     background: url("../images/phones-mobile.png");
@@ -23,7 +29,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 450px;
+    padding-top: 420px;
     padding-bottom: 0;
   }
 }
@@ -73,6 +79,9 @@
   padding-bottom: 124px;
 
   &__wrapper {
+    @include responsive(tablet) {
+      padding-bottom: 5rem;
+    }
     background-color: $white-color;
     padding: 2.4rem;
   }
@@ -88,8 +97,6 @@
     grid-template-columns: repeat(auto-fill, 255px);
     column-gap: 30px;
     @include responsive(tablet) {
-      row-gap: 30px;
-      text-align: center;
       justify-content: center;
     }
   }
